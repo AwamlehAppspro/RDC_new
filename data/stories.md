@@ -64,10 +64,10 @@
 ## story_legal_advice
 * Legal_advice
   - utter_legal_advice
-* yes 
+* yesss 
   - utter_sub_req
   - utter_menu2
-* no
+* nooo
   - utter_choose
   - utter_menu1
 
@@ -80,9 +80,9 @@
   - utter_aqar 
 * hadm
   -utter_hadm
-* yes
+* yesss
   - utter_yes_menu2
-* no
+* nooo
   - utter_no_menu2    
   - utter_choose
   - utter_menu1
