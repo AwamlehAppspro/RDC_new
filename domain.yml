@@ -1,0 +1,237 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- claim
+- request
+- reg
+- pro_seizure
+- petition_request
+- request_for_omission
+- working_hours
+- doc_hours
+- c_s
+- open_case
+- legal_cons
+- payment_for_case
+- invalid_login
+- bye_bye
+- hi_hi
+- Sample_of_App_Num
+- Application_Status
+- Name
+- about_RDC
+- comment
+- Customer_Service
+- Requests
+- my_case
+- cost
+- access
+- access2
+- access_to_case
+entities:
+- AppNum
+- request
+- claim
+slots:
+  claim:
+    type: unfeaturized
+  request:
+    type: unfeaturized
+responses:
+  utter_menu1:
+  - text: "1.الاستعلام عن صحيفة الحالة الايجارية \n\n 2.استشارة قانونية \n\n 3.متابعة الدعاوي الخاصة \n\n 4.معلومات عن المركز"
+  utter_choose:
+  - text: "يرجى اختيار أحد الخدمات التالية:"     
+  utter_help_you:
+  - text: "يسعدني لقائك, كيف لي أن أساعدك؟"  
+  utter_services:
+  - text: "1.اوقات عمل المركز \n\n 2.أوقات استلام االمعاملات   \n\n 3.أسئلة شائعة"  
+  utter_choose_major:
+  - text: "الرجاء اختيار الاختصاص"  
+  utter_major:
+  - text: "1.تسجیل \n\n 2.تنفيذ اخلاء \n\n 3.لجنة يد الخير\n\n 4. معلومات عامة" 
+  utter_reg:
+  - text: "1. اخطار الزیاده ولإخلاء  \n\n 2. تسجیل دعوی"   
+  utter_rem: 
+  - text: "لاخطار بإخلاء الْعَقَارَ يَكُونُ عَنْ طَرِيقِ دَوَائِرِ كَاتِبِ الْعَدْلِ فِي الدَّوْلَةِ أَوِ الْبَريدُ الْمُسَجَّلُ وَلَا يُعَتِّدُ بِالشَّرْطِ الْمَكْتُوبِ.
+            ولَا مَانِعٌ من ارساله فِي أَيِّ وَقْت .
+            ولَا يَجُوزُ جَمْعُ إِخْطَارِ الإخلاء وَالزِّيَادَةَ فِي آنٍ وَاحِدٍ و"
+  utter_reg_dawa: 
+  - text: "يُمْكِنُ دَفْعُ الرُّسُومِ أَوْ إِيدَاعُ الامانات عَنْ طَرِيقِ الدَّفْعِ الْمُوَقَّعِ الالكتروني( اِدْفَعْ مُسْتَحِقَّاتِكَ) بِطَاقَةِ الْاِئْتِمَانِ أَوْ مِحْفَظَةُ نُقُودِيُّ أَوْ بَنْكُ الامارات الْإِسْلَامِيَّ أَوِ الانصاري.
+            ويَمُّكُنَّ تَسْجِيلَ الدَّعْوَی فی حالة أن الإقامة منتهية
+            وفي حال إلغاء الدعوى يُمْكِنُ اِسْتِرْجَاعُ نِصْفِ رَسْمٍ لِدَعْوَى النِّزَاعِ فَقَطْ
+            وفی حالة أراد شخص رفع دعوى متقابلة یقوم بدفع نَفْسُ رُسُومِ دَعْوَى الْاِبْتِدَائِيَّةِ"   
+  utter_know_paper: 
+  - text: "1.استعلام عن المستأجر \n\n 2.الاستفسار عن المؤجر \n\n 3.الاستعلام عن حالة الطلب"                
+  utter_private_law:
+  - text: "التالي قائمة الدعاوي الخاصة بك" 
+  utter_legal_advice:
+  - text: "مركز فض المنازعات الايجارية مختص بقضايا الايجار في دبي التي تقل مدة العقد فيها عن عشر سنوات و غير تابعة لجهة حكومية اتحادية او مركز دبي المالي. \n\n هل تسأل عن دعوى إخلاء من المؤجر"  
+  utter_url_lessor:
+  - text: "https://dubailand.gov.ae/ar/rdc/rental-good-conduct-certificate/rental-good-conduct-certificate-form/#/"  
+  utter_url_renter:
+  - text: "https://dubailand.gov.ae/ar/rdc/rental-good-conduct-certificate/rental-good-conduct-certificate-form/#/"  
+  utter_url_request:
+  - text: "https://dubailand.gov.ae/ar/rdc/rental-good-conduct-certificate/rental-good-conduct-certificate-form/#/"  
+  utter_sub_req:
+  - text: "ما هو موضوع الدعوى الفرعي؟"  
+  utter_menu2:
+  - text: "1.اخلاء لعدم السداد \n\n 2.اخلاء للتأجير من الباطن \n\n 3.اخلاء لسقوط العقار \n\n 4.اخلاء لرغبة المالك في هدم العقار او إضافة مباني"  
+  utter_sdad:
+  - text: "شروط قبول دعوى اخلاء بعدم السداد ان يتم اخطار المستأجر من  خلال كاتب العدل او البريد المسجل و إعلانه باللصق أو النشر ، هل الشروط توافق طلبك ؟"  
+  utter_baten:
+  - text: "شروط قبول دعوى إخلاء للتأجير من الباطن ان يتم التأكد من عدم إعطاء المستأجر حق التأجير و ان يتم اخطار المستأجر من خلال كاتب العدل او البريد المسجل و إعلانه باللصق او النشر هل الشروط توافق طلبك ؟"  
+  utter_aqar:
+  - text: "يجب لقبول الدعوى الاخلاء ان يكون هناك تقرير صادر من بلدية دبي او معتمد منها يفيد بأن العقار قابل للسقوط و ان يتم اخطار المستأجر من خلال كاتب العدل او البريد المسجل. هل الشروط توافق طلبك ؟"  
+  utter_hadm:
+  - text: " لقبول دعوى الاخلاء يجب الحصول على قرار من بلدية دبي بالهدم و ان يتم اخطار المستأجر برغبتك بالهدم من خلال كاتب العدل او البريد المسجل. هل الشروط توافق طلبك ؟"  
+  utter_yes_menu2:
+  - text: "وفقا للمعطيات السابقة فإن السند القانوني لطلبك متوافر، يمكنك رفع دعوى قضائية أمام المركز"  
+  utter_no_menu2:
+  - text: "وفقا لمعطيات المستخدم فإن طلبك يخرج عن اختصاص المركز"  
+  utter_do_ekhla:
+  - text: " يمكنك التواصل مع مأمور التنفيذ ليتم تحديد موعد الاخلاء عن طريق التَّوَاصُلُ مِنْ خِلَالَ الْبَريدِ الالكتروني أَوْ رَقْمُ الْهَاتِفِ الْمَوْجُودِ فِي اللَّاَئِحَةِ عَلَى الْمَوْقِعِ الالكتروني"
+  utter_yad_khair:
+  - text: "يمكنك التقديم في لجنة يد الخير عن طريق التَّوَاصُل مِنْ خِلَالَ الْبَريد الالكتروني 
+khair@rdc.gov.ae"  
+  utter_menu3:
+  - text: " 1.دليل الخدمات \n\n 2.مركز فض المنازعات الإيجارية \n\n 3.القاضي الذكي"    
+  utter_guide:
+  - text: "يمكنك الاطلاع علي دليل الخدمات مِنْ خِلَالَ الْمَوْقِعِ الالكتروني تَحْدِيدَ دَليلَ الْخِدْمَاتِ ثُمَّ تَحْدِيدُ مَرْكَزِ فَضِّ الْمُنَازَعَاتِ الايجارية"  
+  utter_center:
+  - text: "مَرْكَزُ فَضِّ الْمُنَازَعَاتِ الْإِيجَارِيَّةِ هُوَ مَنْظُومَةُ قَضَائِيَّةُ مُخْتَصَّةُ بِالْفَصْلِ فِي جَمِيعِ الْمُنَازَعَاتِ الْإِيجَارِيَّةِ الَّتِي تَنْشَأُ بَيْنَ مُؤَجِّرِيٍّ وَمُسْتَأْجِرِي الْعَقَّارَاتِ الْوَاقِعَةِ ضِمْنَ إمَارَةِ دبي"  
+  utter_smart:
+  - text: "خِدْمَةُ تَقَدُّمٍ مِنْ خِلَالَ تَطْبِيقِ dubai rest القاضي الذكي يمكنه تقديم اِسْتِشَارَةُ قَانُونِيَّةُ مَجَّانِيَّةُ تَعَرُّفٍ بِحُقوقِ أَطْرَافِ الْعَلَاَّقَةِ الْإِيجَارِيَّةِ قَبْلَ الشُّرُوعِ فِي رَفْعِ الْقَضِيَّةِ"  
+  utter_pro_seizure:
+  - text: فَتْحُ المِلَفِّ 20 دِرْهَمٍ وَبَعْدَ تَصْريحِ القَاضِي يَدْفَعُ 2.5 % مِنْ
+      قيمَةِ عَقْدِ الايِّجارِ بِحَدِّ اقْصَى 3000 دِرْهَمٍ .
+  utter_fallback:
+  - text: أعتَذِرُ مِنْكَ لِازِلتُ أتَعَلم لأُجِيبك عَلى جَميعِ استفسراتكْ
+  utter_petition_request:
+  - text: 620 دِرْهَمٍ بِدُونِ الوِكالَةِ وَاضَافَةِ 25 دِرْهَمٍ لِلْوَكَالَةِ .
+  utter_request_for_omission:
+  - text: لَا تُوجَدُ رُسومٌ
+  utter_working_hours:
+  - text: مَواعيدُ العَمَلِ مِنْ السّاعَةِ السابعة و النصف الى الساعة الثانية و النصف
+      بعد الظهر مِنْ الأَحَدِ إلَى الخَميسَ
+  utter_doc_hours:
+  - text: مَواعيدُ اسْتِلامِ المُعامَلاتِ مِنْ الجُمْهورِ فِي الدَّوْرِ الأَرْضيِّ
+      مِنْ السّاعَةِ السابعة و النصف صباحا الى الساعة الواحدة ظهرا
+  utter_c_s:
+  - text: مَواعيدُ الرَّدِّ عَلَى اسْتِفْساراتِ ( تَنْفيذِ الأحكامِ ) الدَّوْرُ الأَوَّلُ
+      مِنْ السّاعَة السابعة و النصف صباحا حتى الثانية عشر ظهرا
+  utter_open_case:
+  - text: نَعَمْ يُمْكِنُ فَتْحُ الدَّعْوَى
+  utter_legal_cons:
+  - text: لا،المَرْكَزُ لَا يُقَدَّمُ الِاسْتِشَارَاتِ القانونيَّةَ
+  utter_payment_for_case:
+  - text: يُمْكِنُ دَفْعُ الرُّسومِ عَنْ طَريقِ المَوْقِعِ الإلكتروني او بِطاقَةِ
+      الِائْتِمَانِ أَوْ نَقدِي أَوْ البَنْكِ
+  utter_invalid_login:
+  - text: عَلَى المُتَعامِلِ الضَّغْطُ عَلَى الرّابِطِ المُرْسَلِ مِنْ قِبَلِ النِّظامِ
+      وَسَيَظْهَرُ لَهُ أَيْقونَةُ إِعادَةِ إِرْسالِ رابِطِ التَّفْعيلِ وَسَيَتِمُّ
+      إِرْسالُ رابِطٍ جَديدٍ إلَى نَفْسِ البَرِيدِ الإِلِكْتِرونيِّ المُدخَلَ عِنْدَ
+      التَّسْجيلِ
+  utter_bye_bye:
+  - text: مع السلامة
+  utter_hi_hi:
+  - text: بأفضل حال و انتم
+  utter_ApplicationStatus:
+  - text: ما هو رقم طلبك؟
+  utter_Application_Status_Answer:
+  - text: طلبك قيد التنفيذ
+  utter_Name:
+  - text: أنا عادل
+  utter_about_RDC:
+  - text: مركز فض المنازعات الإيجارية هو منظومة قضائية مختصة بالفصل في جميع المنازعات
+      الإيجارية التي تنشأ بين مؤجري ومستأجري العقارات الواقعة ضمن إمارة دبي.
+  utter_comment:
+  - text: يمكنك إرسال بريد الكتروني إلى support@eres.ae.
+  utter_Customer_Service:
+  - text: يمكنك التواصل معنا عن طريق الاتصال على 8004488 أو إرسال بريد إلكتروني إلى
+      support@eres.ae
+  utter_request:
+  - text: نعم ، يمكنك إضافة طلبات جديدة إلى الدعوى قبل حجز الدعوى للحكم.
+  utter_my_case:
+  - text: يمكنك زيارة www.rdc.gov.ae والدخول على حسابك ومن ثم البحث عن دعوى.
+  utter_register:
+  - text: يمكنك تسجيل دعوى على نظام مركز فض المنازعات الإيجارية، إضافة كافة الطلبات،
+      إرفاق نسخة من المستندات والإنتظار لحين الإنتهاء من التدقيق على الدعوى وثم سداد
+      رسوم الدعوى.
+  utter_cost:
+  - text: تسجيل حساب على نظام مركز فض المنازعات الإيجارية مجاني تمامًا.
+  utter_access:
+  - text: يمكن لأي شخص لديه حساب فعال او تسجيل حساب جديد على نظام مركز فض المنازعات
+      الإيجارية عن طريق المستندات الثبوتية و الدخول إلى الحساب.
+  utter_access2:
+  - text: ملاك العقارات،الشركات العقارية، المستأجرين و مكاتب المحاماة
+  utter_access_to_case:
+  - text: يمكنك زيارة www.rdc.gov.ae والدخول على حسابك ومن ثم البحث عن دعوى في حال
+      عدم  ظهور الدعوى على لوحة العمل الخاصة بك يمكنك توحيد بيانتك من خلال إرسال بريد
+      على csd-rdc@dubailand.gov.ae
+  utter_dispute_claim:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/dispute-lawsuit-for-amicable-settlement/#/
+  utter_first-instance:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/first-instance-lawsuit/#/
+  utter_appeal:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/appeal/#/
+  utter_judgment-interpretation:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/judgment-interpretation-lawsuit/#/
+  utter_omission-in-judgment:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/omission-in-judgment/#/
+  utter_grievance:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/grievance/#/
+  utter_writ-of-certiorari:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/writ-of-certiorari-lawsuit/#/
+  utter_petition-order:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/petition-order/#/
+  utter_offer-and-deposit:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/offer-and-deposit/#/
+  utter_writ-of-payment:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/writ-of-payment/#/
+  utter_sequestration:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/sequestration/#/
+  utter_execution-proceeding:
+  - text: https://dubailand.gov.ae/ar/services/service-directory/execution-proceeding/#/
+actions:
+- utter_fallback
+- action_request
+- action_claim
+- utter_pro_seizure
+- utter_petition_request
+- utter_request_for_omission
+- utter_working_hours
+- utter_doc_hours
+- utter_c_s
+- utter_open_case
+- utter_legal_cons
+- utter_payment_for_case
+- utter_invalid_login
+- utter_bye_bye
+- utter_hi_hi
+- utter_ApplicationStatus
+- utter_Application_Status_Answer
+- utter_Name
+- utter_about_RDC
+- utter_comment
+- utter_Customer_Service
+- utter_request
+- utter_my_case
+- utter_register
+- utter_cost
+- utter_access
+- utter_access2
+- utter_access_to_case
+- utter_dispute_claim
+- utter_first-instance
+- utter_appeal
+- utter_judgment-interpretation
+- utter_omission-in-judgment
+- utter_grievance
+- utter_writ-of-certiorari
+- utter_petition-order
+- utter_offer-and-deposit
+- utter_writ-of-payment
+- utter_sequestration
+- utter_execution-proceeding
