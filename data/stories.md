@@ -18,8 +18,7 @@
 * remider_to_inc
   - utter_rem
 * regDawa
-  - utter_reg_dawa      
-
+  - utter_reg_dawa
 
 ## story_con_menu1 
 * do_ekhla
@@ -46,7 +45,6 @@
   - utter_choose
   - utter_menu1
 
-
 ## story_know_paper
 * knowpaper
   - utter_know_paper
@@ -55,7 +53,7 @@
 * know_Lessor
   - utter_url_lessor
 * know_request
-  - utter_url_request 
+  - utter_url_request
 
 ## sroty_private_law
 * private_law
@@ -92,95 +90,11 @@
 * pro_seizure
   - utter_pro_seizure
 
-## petition_request_Scenario
-* petition_request
-  - utter_petition_request
-
-## request for om
-* request_for_omission
-  - utter_request_for_omission
-
-## working hours 
-* working_hours
-  - utter_working_hours
-
-## doc hours
-* doc_hours
-  - utter_doc_hours
-
-## customer services 
-* c_s
-  - utter_c_s
-
-## open case
-* open_case
-  - utter_open_case
-
-## legal consultation 
-* legal_cons
-  - utter_legal_cons
-
-## payment for case
-* payment_for_case
-  - utter_payment_for_case
-
-## invalid login
-* invalid_login
-  - utter_invalid_login
-
-## bye bye
-* bye_bye
-  - utter_bye_bye
-
-## hello
-* hi_hi
-  - utter_hi_hi
-
 ## Application Status 
 * Application_Status
   - utter_ApplicationStatus
 * Sample_of_App_Num{"AppNum":"56565"}
   - utter_Application_Status_Answer
-
-## Name
-* Name
-  - utter_Name
-
-## About RDC
-* about_RDC
-  - utter_about_RDC
-
-## Comment 
-* comment
-  - utter_comment
-
-## Customer Service 
-* Customer_Service 
-  - utter_Customer_Service
-
-## Requests
-* Requests
-  - utter_request
-
-## My Case
-* my_case
-  - utter_my_case
-
-## Register_Story
-* reg 
-  - utter_register
-
-## Cost 
-* cost
-  - utter_cost
-
-## Access 
-* access 
-  - utter_access
-
-## Access2 
-* access2
-  - utter_access2
 
 ## Access to case
 * access_to_case
@@ -196,4 +110,8 @@
 
 ## claim_story
 * claim{"claim":"الاستئنافية"} 
-  - action_claim   --> 
+  - action_claim   -->
+
+## thanks_Story
+* thanks
+  - utter_good_bye

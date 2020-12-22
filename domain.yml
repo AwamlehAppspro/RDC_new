@@ -2,6 +2,7 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
+- thanks
 - claim
 - request
 - center
@@ -237,6 +238,12 @@ responses:
   - text: https://dubailand.gov.ae/ar/services/service-directory/sequestration/#/
   utter_execution-proceeding:
   - text: https://dubailand.gov.ae/ar/services/service-directory/execution-proceeding/#/
+  utter_good_bye:
+  - text: مع السلامة
+  utter_url_renter:
+  - text: https://dubailand.gov.ae/ar/rdc/rental-good-conduct-certificate/rental-good-conduct-certificate-form/#/
+  utter_url_request:
+  - text: https://dubailand.gov.ae/ar/rdc/rental-good-conduct-certificate/rental-good-conduct-certificate-form/#/
 actions:
 - utter_fallback
 - action_request
