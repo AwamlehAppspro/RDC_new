@@ -54,6 +54,66 @@ intents:
 - Requests
 - hi_hi
 - invalid_login
+- evacuation_1
+- use_rent
+- user_rent
+- close_shop
+- change_harm
+- not_purpose
+- Stag_fall
+- stage_fall
+- terms_contract
+- urban_development
+- for_demolition
+- restoration_ maintenance
+- personal_use
+- evacuation_sale
+- menu_2
+- center_services
+- Req2
+- cases2
+- request_performance
+- request_performance2
+- offer_deposit
+- petition_order
+- execution_proceeding
+- grievance
+- certiorari_lawsuit
+- omission_judgement
+- omission_judgment
+- judgment_inter
+- appeal
+- first_instance
+- dispute_lawsuit
+- cases13
+- Judicial_committees
+- committee1
+- committee2
+- committee3
+- committee4
+- committee5
+- committee6
+- committee7
+- committee8
+- committee9
+- committee10
+- committee11
+- committee12
+- committee13
+- committee14
+- committee15
+- committee16
+- committee17
+- committee18
+- committee19
+- committee20
+- committee21
+- committee22
+- committee23
+- committee24
+- committee25
+- committee26
+- committee27
 entities:
 - AppNum
 - request
@@ -68,16 +128,15 @@ responses:
   - text: الاستعلام عن صحيفة الحالة الايجارية  \n استشارة قانونية \n  متابعة الدعاوي
       الخاصة  \n معلومات عن المركز
   utter_choose:
-  - text: 'يُرْجَى اخْتِيَارِ أَحَدْ الْخِدْمَات التَّالِيَة :'
+  - text: الرَّجَاءُ إختيارْ أَحَدْ الْخِدْمَاتْ التَّالِيَةْ
   utter_help_you:
-  - text: أهلاً .... أخبرني عن أي خدمة تسألْ؟ \nاستشارة قانونية\n الاستعلام عن صحيفة
-      الحالة الإيجارية\n الدعاوى الخاصة\n أو معلومات عن المركزْ
+  - text: أَخْبِرْني عن أي خدمةٍ تسألْ؟ \nالدَعاوى الخاصة\n. الاستعلامْ عن صحيفة الحالة
+      الإيِجَارِية\n. وَمَضَاتْ إيجارية\n. معلوماتٍ عن المركزْ.
   utter_services:
-  - text: 'الرَّجَاء تَحْدِيدْ الْخِدْمَة : \n أَوْقَات عَمَل الْمَرْكَزْ  \n أَوْقَات
-      اسْتِلَام الْمُعَامَلَاتْ  \nالأسْئِلَة الشَائِعَهْ .'
+  - text: الرَّجَاء تَحْدِيدْ المعلومة:\n أوْقَات عَمَلْ الْمَرْكَزْ. \nاللجان القضائية
+      \nالأسْئلَة الشَائِعَة.
   utter_choose_major:
-  - text: 'الرجاء اختيار الاختصاص : تسجیل - تنفيذ اخلاء - لجنة يد الخير - معلومات
-      عامة'
+  - text: 'الرجَاءْ إِخْتيارْ الإِخْتِصَاصّْ: لجنة يد الخير - معلومات عامة'
   utter_major:
   - text: "1.تسجیل \n\n 2.تنفيذ اخلاء \n\n 3.لجنة يد الخير\n\n 4. معلومات عامة"
   utter_reg:
@@ -87,21 +146,11 @@ responses:
       فِي الدَّوْلَةِ أَوِ الْبَريدُ الْمُسَجَّلُ وَلَا يُعَتِّدُ بِالشَّرْطِ الْمَكْتُوبِ.
       ولَا مَانِعٌ من ارساله فِي أَيِّ وَقْت . ولَا يَجُوزُ جَمْعُ إِخْطَارِ الإخلاء
       وَالزِّيَادَةَ فِي آنٍ وَاحِدٍ و
-  utter_reg_dawa:
-  - text: يُمْكِنُ دَفْعُ الرُّسُومِ أَوْ إِيدَاعُ الامانات عَنْ طَرِيقِ الدَّفْعِ
-      الْمُوَقَّعِ الالكتروني( اِدْفَعْ مُسْتَحِقَّاتِكَ) بِطَاقَةِ الْاِئْتِمَانِ
-      أَوْ مِحْفَظَةُ نُقُودِيُّ أَوْ بَنْكُ الامارات الْإِسْلَامِيَّ أَوِ الانصاري.
-      ويَمُّكُنَّ تَسْجِيلَ الدَّعْوَی فی حالة أن الإقامة منتهية وفي حال إلغاء الدعوى
-      يُمْكِنُ اِسْتِرْجَاعُ نِصْفِ رَسْمٍ لِدَعْوَى النِّزَاعِ فَقَطْ وفی حالة أراد
-      شخص رفع دعوى متقابلة یقوم بدفع نَفْسُ رُسُومِ دَعْوَى الْاِبْتِدَائِيَّةِ
   utter_know_paper:
-  - text: 'الصحيفة الإجارية هُوَ اِسْتِعْلَامٌ عَنِ الْمَعْلُومَاتِ الايجارية عَنِ
-      الشَّخْصِ الْمُسْتَأْجِرِ أَوِ الْمُؤَجِّرُ مِنْ خِلَالَ رَقْمِ الْهُوِيَّةِ
-      الإماراتية وَبِمُوَافَقَةِ الْمُسْتَعْلِمِ عَنْهُ مُتَوَفِّرَةً عَلَى الْمَوْقِعِ
-      الالكتروني وَتَطْبِيقَ dubai rest يرجى اختيار من التالي : استعلام عن المستأجر
-      أو الاستفسار عن المؤجر أو الاستعلام عن حالة الطلب'
+  - text: الرَّجَاء تَحْدِيدْ الْخِدْمَة الْمَطْلُوبَة. \nاسْتِعْلَامْ عَنْ الْمُسْتَأْجر.
+      \nالِاسْتِفْسَارِْ عَنْ الْمُؤَجر. \nالاستعلامْ عَنْ حَالَةْ الطَّلَبْ. \n
   utter_private_law:
-  - text: التالي قائمة الدعاوي الخاصة بك
+  - text: إِلَيْكَ قَائِمَةُ الدَّعَاوى الْخَاصَّةَ بِكَ
   utter_legal_advice:
   - text: (مركز فض المنازعات الايجارية مختص بقضايا الايجار في دبي التي تقل مدة العقد
       فيها عن عشر سنوات و غير تابعة لجهة حكومية اتحادية او مركز دبي المالي.  هل تسأل
@@ -113,19 +162,11 @@ responses:
       إخلاء للتأجير مِنْ الْبَاطِنْ  \nإخلاء لِسُقُوط الْعَقَار \n إخلاءْ لِرَغْبَة
       الْمَالِكُ فِي هَدْمِ الْعَقَارِ أَوْ إضَافَةِ مَبَانِي
   utter_menu2:
-  - text: إخلاءْ لِعَدَم السَّدَادْ \n إخلاء للتأجير مِنْ الْبَاطِنْ  \n إخلاء لِسُقُوط
-      الْعَقَار\n إخلاءْ لِرَغْبَة الْمَالِكُ فِي هَدْمِ الْعَقَارِ أَوْ إضَافَةِ
-      مَبَانِي
+  - text: الرَّجَاء تَحْدِيدْ الْخِدْمَة:\n خدمات الْمَرْكَزْ. \nحالات الإخلاء.
   utter_sdad:
-  - text: أَنْ يَتِمَّ إخْطَار الْمُسْتَأْجِرِ مِنْ خِلَالِ كَاتِب الْعَدْلِ أَوْ
-      الْبَرِيدَ الْمُسَجَّل . و إعْلَامِه باللَصق أَو النَّشْر ، هَل الشُّرُوط تُوَافِقُ
-      طَلَبَك ؟
+  - text: https://gisinter.com/RDC/Eviction-non-payment.pdf
   utter_baten:
-  - text: 'إخلاء للتأجير مِنْ الْبَاطِنْ : شُرُوطْ قَبُولِ دَعْوَى إخْلَاء للتأجير
-      مِنْ الْبَاطِنْ إنْ يُتِمَّ التَّأَكُّدُ مِنْ عَدَمِ إعْطَاءِ الْمُسْتَأْجِر
-      حَقّ التّأجيْر أَنْ يَتِمَّ إخْطَار الْمُسْتَأْجِرِ مِنْ خِلَالِ كَاتِب الْعَدْلِ
-      أَوْ الْبَرِيدَ الْمُسَجَّل . و إعْلَامِه باللَصق أَو النَّشْر ، هَل الشُّرُوط
-      تُوَافِقُ طَلَبَك ؟'
+  - text: https://gisinter.com/RDC/Eviction-subletting.pdf
   utter_aqar:
   - text: يَجِب لِقَبُول دَّعْوَى الإخّلاء أَنْ يَكُونَ هُنَاكَ تَقْرِير صَادِرٌ مِنْ
       بَلَدِيَّةْ دُبَي أَو مُعْتَمَدْ مِنْهَا يُفِيد بِأَنَّ الْعَقَارَ قَابِل لِلسُّقُوط
@@ -147,14 +188,10 @@ responses:
       مِنْ خِلَالَ الْبَريدِ الالكتروني أَوْ رَقْمُ الْهَاتِفِ الْمَوْجُودِ فِي اللَّاَئِحَةِ
       عَلَى الْمَوْقِعِ الالكتروني'
   utter_yad_khair:
-  - text: يمكنك التقديم في لجنة يد الخير عن طريق التَّوَاصُل مِنْ خِلَالَ الْبَريد
-      الالكتروني khair@rdc.gov.ae
+  - text: يمكنك التقديم في لجنة يد الخير عن طريقْ التَّوَاصُلْ مِنْ خِلَالْ الْبَرِيدْ
+      الإلكترُونيّْ التالي:\n khair@rdc.gov.ae
   utter_menu3:
-  - text: 'يرجى اختيار من التالي : دليل الخدمات  او مركز فض المنازعات الإيجارية او
-      القاضي الذكي'
-  utter_guide:
-  - text: يمكنك الاطلاع علي دليل الخدمات مِنْ خِلَالَ الْمَوْقِعِ الالكتروني تَحْدِيدَ
-      دَليلَ الْخِدْمَاتِ ثُمَّ تَحْدِيدُ مَرْكَزِ فَضِّ الْمُنَازَعَاتِ الايجارية
+  - text: 'يُرْجَى الإِختِيَار مِن التَّالِي : \n  الْقَاضِي الذَّكِي'
   utter_center:
   - text: مَرْكَز فَض الْمُنَازَعَات الإيجارية فِي دُبَي مَنْظُومَة قضائية مُتَكَامِلَةٌ
       يُرَكِز عَلَى تَرْسِيخ بِيئَة عقارية آمِنَةً مِنْ خِلَالِ سُرْعَةّ الْفَصْل
@@ -162,25 +199,25 @@ responses:
       ، وَيَخْتَصْ الْمَرْكَز بِالْقَضَايَا الايجارية فِي إِمَارَةِ دُبَي الَّتِي
       تَقُل مُدَّةِ الْعَقْدِ فِيهَا عَنْ عَشْر سَنَوَات ..
   utter_smart:
-  - text: خِدْمَةُ تَقَدُّمٍ مِنْ خِلَالَ تَطْبِيقِ dubai rest القاضي الذكي يمكنه
-      تقديم اِسْتِشَارَةُ قَانُونِيَّةُ مَجَّانِيَّةُ تَعَرُّفٍ بِحُقوقِ أَطْرَافِ
-      الْعَلَاَّقَةِ الْإِيجَارِيَّةِ قَبْلَ الشُّرُوعِ فِي رَفْعِ الْقَضِيَّةِ
+  - text: خدمة تُقدمْ مِنْ خِلَالْ تَطْبِيقْ dubai rest. تُعَرِّفْ بِحُقوقْ أَطْرَافْ
+      الْعَلَاقَةْ الْإِيجَارِيَّةْ قَبْلَ الشُّرُوعْ فِي رَفْعْ الْقَضِيَّةْ. يمكنه
+      تقديم اِسْتِشَارَة قَانُونِيَّةٍ مَجَّانِيَّةْ.
   utter_pro_seizure:
   - text: فَتْحُ المِلَفِّ 20 دِرْهَمٍ وَبَعْدَ تَصْريحِ القَاضِي يَدْفَعُ 2.5 % مِنْ
       قيمَةِ عَقْدِ الايِّجارِ بِحَدِّ اقْصَى 3000 دِرْهَمٍ .
   utter_fallback:
-  - text: أعتَذِرُ مِنْكَ لِازِلتُ أتَعَلم لأُجِيبك عَلى جَميعِ استفساراتكْ... يمكنك
-      سؤالي ما هي خدماتي.
+  - text: أعتَذِرُ مِنْكَ إني أتَعَلم لأُجِيبك عَلى جَميعِ استفساراتك. يمكنك سؤالي
+      ما هي خدماتي.
   utter_petition_request:
   - text: 620 دِرْهَمٍ بِدُونِ الوِكالَةِ وَاضَافَةِ 25 دِرْهَمٍ لِلْوَكَالَةِ .
   utter_request_for_omission:
   - text: لَا تُوجَدُ رُسومٌ
   utter_working_hours:
-  - text: مَواعيدُ العَمَلِ مِنْ السّاعَةِ السابعة و النصف الى الساعة    الثانية والنصف
-      بعد الظهر مِنْ الأَحَدِ إلَى الخَميسَ
+  - text: مَواعِيدْ العَمَلِ مِنْ السّاعَةْ السابعةْ والنِصّفْ إلى السّاعَةْ الثانيةْ
+      والنِصّفْ بعد ظُّهْر  مِنْ الأَحَدْ إلَى الخَميسْ
   utter_doc_hours:
-  - text: مَواعيدُ اسْتِلامِ المُعامَلاتِ مِنْ الجُمْهورِ فِي الدَّوْرِ الأَرْضيِّ
-      مِنْ السّاعَةِ السابعة و النصف صباحا الى الساعة الواحدة ظهرا
+  - text: مَواعيدْ إسْتِلامْ المُعامَلاتْ مِنْ الجُمْهورْ فِي الدَّوْرْ الأَرْضيّْ
+      مِنْ السّاعَةْ السابعة والنصفْ صباحاً إلى الساعة الواحدة ظُهْراً
   utter_c_s:
   - text: مَواعيدُ الرَّدِّ عَلَى اسْتِفْساراتِ ( تَنْفيذِ الأحكامِ ) الدَّوْرُ الأَوَّلُ
       مِنْ السّاعَة السابعة و النصف صباحا حتى الثانية عشر ظهرا
@@ -197,7 +234,7 @@ responses:
       إِرْسالُ رابِطٍ جَديدٍ إلَى نَفْسِ البَرِيدِ الإِلِكْتِرونيِّ المُدخَلَ عِنْدَ
       التَّسْجيلِ
   utter_bye_bye:
-  - text: مع السلامة
+  - text: مَعَ السَّلَاْمْةّْ.
   utter_hi_hi:
   - text: بأفضل حال و انتم
   utter_ApplicationStatus:
@@ -243,8 +280,6 @@ responses:
   - text: https://dubailand.gov.ae/ar/services/service-directory/judgment-interpretation-lawsuit/#/
   utter_omission-in-judgment:
   - text: https://dubailand.gov.ae/ar/services/service-directory/omission-in-judgment/#/
-  utter_grievance:
-  - text: https://dubailand.gov.ae/ar/services/service-directory/grievance/#/
   utter_writ-of-certiorari:
   - text: https://dubailand.gov.ae/ar/services/service-directory/writ-of-certiorari-lawsuit/#/
   utter_petition-order:
@@ -255,14 +290,133 @@ responses:
   - text: https://dubailand.gov.ae/ar/services/service-directory/writ-of-payment/#/
   utter_sequestration:
   - text: https://dubailand.gov.ae/ar/services/service-directory/sequestration/#/
-  utter_execution-proceeding:
-  - text: https://dubailand.gov.ae/ar/services/service-directory/execution-proceeding/#/
   utter_good_bye:
-  - text: مع السلامة
+  - text: مَعَ السَّلَاَمَةْ.
   utter_url_renter:
   - text: https://dubailand.gov.ae/ar/rdc/rental-good-conduct-certificate/rental-good-conduct-certificate-form/#/
   utter_url_request:
   - text: https://dubailand.gov.ae/ar/rdc/rental-good-conduct-certificate/rental-good-conduct-certificate-form/#/
+  utter_user_rent:
+  - text: https://gisinter.com/RDC/Evacuating-property-unlawful-purpose-morals.pdf
+  utter_close_shop:
+  - text: https://gisinter.com/RDC/Evacuation-business-occupancy.pdf
+  utter_change_harm:
+  - text: https://gisinter.com/RDC/Eviction-tenant-damage.pdf
+  utter_not_purpose:
+  - text: https://www.gisinter.com/RDC/Eviction-rented-other-purpose.pdf
+  utter_stage_fall:
+  - text: https://gisinter.com/RDC/Evacuation-dilapidated-property.pdf
+  utter_terms_contract:
+  - text: https://gisinter.com/RDC/Eviction-breaching-terms-contract.pdf
+  utter_urban_development:
+  - text: https://gisinter.com/RDC/Evacuation-development-urban-development.pdf
+  utter_for_demolition:
+  - text: https://gisinter.com/RDC/Eviction-demolition.pdf
+  utter_restoration_ maintenance:
+  - text: https://gisinter.com/RDC/Evacuation-restoration-maintenance.pdf
+  utter_personal_use:
+  - text: https://gisinter.com/RDC/Evacuation-personal-use.pdf
+  utter_evacuation_sale:
+  - text: https://gisinter.com/RDC/Evacuation-sale.pdf
+  utter_center_services:
+  - text: الرَّجَاء تَحْدِيدْ الْخِدْمَة:\n الطلبات.\n الدَعَاوّى.
+  utter_Req2:
+  - text: الرَّجَاء تَحْدِيدْ الْخِدْمَة:\n ١- طلب أمر الأداء. \n ٢- طلب تظلم على
+      أمر الأداء. \n  ٣- طلب عرض و إيداع. \n  ٤- طلب أمر على عريضة.
+  utter_cases2:
+  - text: الرَّجَاء تَحْدِيدْ الْخِدْمَة:\n ١- دعوى النزاع ( التسوية الودية) \n ٢-
+      دعوى الابتدائية \n٣-  دعوى الاستئنافية \n ٤- دعوى التنفيذ \n ٥- دعوى التظلم
+      \n  ٦- دعوى إغفال في الحكم\n ٧- دعوى تفسير حكم \n ٨- دعوى التماس إعادة النظر
+  utter_request_performance:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-4.pdf
+  utter_request_performance2:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-15.pdf
+  utter_offer_deposit:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-5.pdf
+  utter_petition_order:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-6.pdf
+  utter_execution_proceeding:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-3.pdf
+  utter_grievance:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-9.pdf
+  utter_certiorari_lawsuit:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-7.pdf
+  utter_omission_judgement:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-10.pdf
+  utter_judgment_inter:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-11.pdf
+  utter_appeal2:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-12.pdf
+  utter_first_instance:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-13.pdf
+  utter_dispute_lawsuit:
+  - text: https://www.gisinter.com/RDC/ServiceDirectoryTmp-14.pdf
+  utter_cases13:
+  - text: "1.إخلاءْ لِعَدَم السَّدَادْ. \\n 2.إخْلَاءْ للتأجير مِنْ الْبَاطِنْ. \\\
+      n 3.الإخْلاء للاستعمال لغَايَةٍ غَيْرِ مَشْرُوعَةْ.\\n 4.\t‌الإخلاء لِتَرْك\
+      \ الْمَحَلّ التِّجارِيّ مُغْلَقًا وَدُونَ إشغالْ.\\n 5.\tالإخلاءُ لِإِحْدَاث\
+      \ الْمُسْتَأْجِر تَغْيِيرًا أَوْ ضَرَرًا فِي المأجورْ.\\n 6.\tالإخلاء لِاسْتِعْمَال\
+      \ الْمُسْتَأْجِر الْمَأْجُورْ. فِي غَيْرِ الْغَرَض الْمُؤَجَّر لأجلهْ.\\n 7.\t\
+      إخلاء الْعَقَار الْآيِل للسقوط\\n 8.\t‌الإخلاء لِمُخَالَفَة شُرُوطِ الْعَقْدْ.\\\
+      n 9.\tالإخلاء لمتطلبات التَّنْمِيَة والتَّطَوُّر الْعِمْرَانِيُّ فِي الْإِمَارَةْ.\\\
+      n 10.\tالإخلاء للهدمْ.\\n 11.\tالإخلاء للترميم أَو الصيانةْ.\\n 12.\tالإخلاء\
+      \ لِلِاسْتِعْمَال الشَّخْصِيّْ. \\n 13.\tالإخلاء لِلْبَيْعْ.\\n"
+  utter_Judicial_committees:
+  - text: ماهي اللجنة المطلوبْ الاستعلامْ عنها
+  utter_committee1:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-1.pdf
+  utter_committee2:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-2.pdf
+  utter_committee3:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-3.pdf
+  utter_committee5:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-5.pdf
+  utter_committee4:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-4.pdf
+  utter_committee6:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-6.pdf
+  utter_committee7:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-7.pdf
+  utter_committee8:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-8.pdf
+  utter_committee9:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-9.pdf
+  utter_committee10:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-10.pdf
+  utter_committee11:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-11.pdf
+  utter_committee12:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-12.pdf
+  utter_committee13:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-13.pdf
+  utter_committee14:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-14.pdf
+  utter_committee15:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-15.pdf
+  utter_committee16:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-16.pdf
+  utter_committee17:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-17.pdf
+  utter_committee18:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-18.pdf
+  utter_committee19:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-19.pdf
+  utter_committee20:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-20.pdf
+  utter_committee21:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-21.pdf
+  utter_committee23:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-23.pdf
+  utter_committee22:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-22.pdf
+  utter_committee24:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-26.pdf
+  utter_committee25:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-24.pdf
+  utter_committee26:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-25.pdf
+  utter_committee27:
+  - text: https://www.gisinter.com/RDC/RDC-Doc-27.pdf
 actions:
 - utter_fallback
 - action_request
